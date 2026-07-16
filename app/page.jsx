@@ -1,4 +1,5 @@
 import MetricCard from '@/components/MetricCard';
+import InventoryTracker from '@/components/InventoryTracker';
 
 const METRICS = [
   {
@@ -20,7 +21,9 @@ const METRICS = [
 export default function Home() {
   return (
     <main className="p-8">
-      <h1 className="text-2xl font-bold mb-6">SwiftDrop Analytics Dashboard</h1>
+      <h1 className="text-2xl font-bold text-gray-900 mb-6">
+        SwiftDrop Analytics Dashboard
+      </h1>
 
       <div className="grid grid-cols-2 gap-4">
         {METRICS.map((metric) => (
@@ -33,6 +36,8 @@ export default function Home() {
           />
         ))}
       </div>
+
+      <InventoryTracker />
     </main>
   );
 }
