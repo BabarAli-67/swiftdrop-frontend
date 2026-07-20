@@ -1,5 +1,6 @@
 import MetricCard from '@/components/MetricCard';
 import InventoryTracker from '@/components/InventoryTracker';
+import ParcelForm from '@/components/ParcelForm';
 
 const METRICS = [
   {
@@ -38,6 +39,7 @@ export default function Home() {
       </div>
 
       <InventoryTracker />
+      <ParcelForm />
     </main>
   );
 }
